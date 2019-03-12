@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: "config-consumer"
+  profiles:
+    active: dev
+
+---
+
+spring:
+  cloud:
+    config:
+      enabled: true
+      uri:
+      - "http://localhost:1667"
+      fail-fast: false
